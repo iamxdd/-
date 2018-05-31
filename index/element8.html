@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>UI组件 - Bootstrap后台管理系统模版Ace下载</title>
+		<meta name="keywords" content="Bootstrap模版,Bootstrap模版下载,Bootstrap教程,Bootstrap中文" />
+		<meta name="description" content="站长素材提供Bootstrap模版,Bootstrap教程,Bootstrap中文翻译等相关Bootstrap插件下载" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- basic styles -->
+
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+
+		<!--[if IE 7]>
+		  <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css" />
+		<![endif]-->
+
+		<!-- page specific plugin styles -->
+
+		<link rel="stylesheet" href="assets/css/jquery-ui-1.10.3.custom.min.css" />
+		<link rel="stylesheet" href="assets/css/jquery.gritter.css" />
+
+		<!-- fonts -->
+
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" />
+
+		<!-- ace styles -->
+
+		<link rel="stylesheet" href="assets/css/ace.min.css" />
+		<link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
+		<link rel="stylesheet" href="assets/css/ace-skins.min.css" />
+
+		<!--[if lte IE 8]>
+		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+		<![endif]-->
+
+		<!-- inline styles related to this page -->
+
+		<!-- ace settings handler -->
+
+		<script src="assets/js/ace-extra.min.js"></script>
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+		<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="main-container" id="main-container">
+			<script type="text/javascript">
+				try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+			</script>
+
+			<div class="main-container-inner">
+
+				<div class="main-content">
+
+					<div class="page-content">
+
+						<div class="row">
+							<div class="col-xs-12">
+								<!-- PAGE CONTENT BEGINS -->
+
+								<hr />
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="row">
+											<div class="col-xs-12">
+												<h3 class="header smaller lighter grey">
+													<i class="icon-spinner icon-spin orange bigger-125"></i>
+													Imageless Spinner
+													<small>(spin.js)</small>
+												</h3>
+											</div>
+
+											<div class="col-xs-12">
+												<i>Change a value to begin</i>
+
+												<div class="pull-right center spinner-preview" id="spinner-preview"></div>
+
+												<form class="form-horizontal" id="spinner-opts">
+													<label>
+														<small class="lighter">Lines:</small>
+
+														<input class="hidden" type="text" name="lines" data-min="5" data-max="16" data-step="2" value="12" />
+													</label>
+
+													<label>
+														<small class="lighter">Length:</small>
+
+														<input class="hidden" type="text" name="length" data-min="0" data-max="30" value="7" />
+													</label>
+
+													<label>
+														<small class="lighter">Width:</small>
+
+														<input class="hidden" type="text" name="width" data-min="2" data-max="20" value="4" />
+													</label>
+
+													<label>
+														<small class="lighter">Radius:</small>
+
+														<input class="hidden" type="text" name="radius" data-min="0" data-max="40" value="10" />
+													</label>
+
+													<label>
+														<small class="lighter">Corners:</small>
+
+														<input class="hidden" type="text" name="corners" data-min="0" data-max="1" data-step="0.1" value="1" />
+													</label>
+
+													<label>
+														<small class="lighter">Rotate:</small>
+
+														<input class="hidden" type="text" name="rotate" data-min="0" data-max="90" value="0" />
+													</label>
+
+													<label>
+														<small class="lighter">Trail:</small>
+
+														<input class="hidden" type="text" name="trail" data-min="10" data-max="100" value="60" />
+													</label>
+
+													<label>
+														<small class="lighter">Speed:</small>
+
+														<input class="hidden" type="text" name="speed" data-min="0.5" data-max="2.2" data-step="0.1" value="1" />
+													</label>
+												</form>
+											</div><!-- /row -->
+										</div><!-- /row -->
+									</div><!-- /span -->
+
+									<div class="col-sm-6">
+										<h3 class="header smaller lighter red">Bootstrap Wells</h3>
+
+										<div class="well">
+											<h4 class="green smaller lighter">Normal Well</h4>
+											Use the well as a simple effect on an element to give it an inset effect.
+										</div>
+
+										<div class="well well-lg">
+											<h4 class="blue">Large Well</h4>
+											Control padding and rounded corners with two optional modifier classes.
+										</div>
+										<div class="well well-sm"> This is a small well </div>
+									</div><!-- /span -->
+								</div><!-- /row -->
+
+
+								<script type="text/javascript">
+									var $path_assets = "assets";//this will be used in gritter alerts containing images
+								</script>
+
+								<!-- PAGE CONTENT ENDS -->
+							</div><!-- /.col -->
+						</div><!-- /.row -->
+					</div><!-- /.page-content -->
+				</div><!-- /.main-content -->
+			</div><!-- /.main-container-inner -->
+
+		</div><!-- /.main-container -->
+
+		<!-- basic scripts -->
+
+		<!--[if !IE]> -->
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<![endif]-->
+
+		<!--[if !IE]> -->
+
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='assets/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
+		</script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+<script type="text/javascript">
+ window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
+</script>
+<![endif]-->
+
+		<script type="text/javascript">
+			if("ontouchend" in document) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+		</script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<!--<script src="assets/js/typeahead-bs2.min.js"></script>-->
+
+		<!-- page specific plugin scripts -->
+
+		<!--[if lte IE 8]>
+		  <script src="assets/js/excanvas.min.js"></script>
+		<![endif]-->
+
+		<script src="assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+		<!--<script src="assets/js/jquery.ui.touch-punch.min.js"></script>-->
+		<!--<script src="assets/js/bootbox.min.js"></script>-->
+		<!--<script src="assets/js/jquery.easy-pie-chart.min.js"></script>-->
+		<!--<script src="assets/js/jquery.gritter.min.js"></script>-->
+		<script src="assets/js/spin.min.js"></script>
+
+		<!-- ace scripts -->
+
+		<!--<script src="assets/js/ace-elements.min.js"></script>-->
+		<!--<script src="assets/js/ace.min.js"></script>-->
+
+		<!-- inline scripts related to this page -->
+
+		<script type="text/javascript">
+			jQuery(function($) {
+			
+				$('#spinner-opts small').css({display:'inline-block', width:'60px'})
+			
+				var slide_styles = ['', 'green','red','purple','orange', 'dark'];
+				var ii = 0;
+				$("#spinner-opts input[type=text]").each(function() {
+					var $this = $(this);
+					$this.hide().after('<span />');
+					$this.next().addClass('ui-slider-small').
+					addClass("inline ui-slider-"+slide_styles[ii++ % slide_styles.length]).
+					css({'width':'125px'}).slider({
+						value:parseInt($this.val()),
+						range: "min",
+						animate:true,
+						min: parseInt($this.data('min')),
+						max: parseInt($this.data('max')),
+						step: parseFloat($this.data('step')),
+						slide: function( event, ui ) {
+							$this.attr('value', ui.value);
+							spinner_update();
+						}
+					});
+				});
+			
+				$.fn.spin = function(opts) {
+					this.each(function() {
+					  var $this = $(this),
+						  data = $this.data();
+			
+					  if (data.spinner) {
+						data.spinner.stop();
+						delete data.spinner;
+					  }
+					  if (opts !== false) {
+						data.spinner = new Spinner($.extend({color: $this.css('color')}, opts)).spin(this);
+					  }
+					});
+					return this;
+				};
+			
+				function spinner_update() {
+					var opts = {};
+					$('#spinner-opts input[type=text]').each(function() {
+						opts[this.name] = parseFloat(this.value);
+					});
+					$('#spinner-preview').spin(opts);
+				}
+
+			});
+		</script>
+	<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>视频会议系统</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- basic styles -->
+
+		<link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+		<!--[if IE 7]>
+		<link rel="stylesheet" href="../assets/css/font-awesome-ie7.min.css"/>
+		<![endif]-->
+
+		<!-- page specific plugin styles -->
+
+		<!-- fonts -->
+
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" />
+
+		<!-- ace styles -->
+
+		<link rel="stylesheet" href="../assets/css/ace.min.css" />
+		<link rel="stylesheet" href="../assets/css/ace-rtl.min.css" />
+		<link rel="stylesheet" href="../assets/css/ace-skins.min.css" />
+
+		<style>
+			.progress{
+				background: none;
+			}
+			.progress span{
+				margin-left: 2%;
+			}
+			.progress-bar{
+				width: 18px;
+			}
+			.widget-container-span{
+				padding: 10px;
+			}
+			.widget-body{
+				height:300px;
+				position:relative;
+			}
+			.widget-main{
+				position:absolute;
+				top:50%;
+				transform: translate(0,-50%);
+				width:100%;
+			}
+			.widget-header{
+				background: #e0efd8;
+			}
+		</style>
+
+		<!--[if lte IE 8]>
+		<link rel="stylesheet" href="../assets/css/ace-ie.min.css"/>
+		<![endif]-->
+
+		<!-- inline styles related to this page -->
+
+		<!-- ace settings handler -->
+
+		<script src="../assets/js/ace-extra.min.js"></script>
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+		<!--[if lt IE 9]>
+		<script src="../assets/js/html5shiv.js"></script>
+		<script src="../assets/js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<!--main-container 开始-->
+
+								<!-- PAGE CONTENT BEGINS -->
+
+								<div class="row">
+									<div class="col-xs-12 col-sm-6 widget-container-span">
+										<div class="widget-box">
+											<div class="widget-header">
+												<i class="icon-desktop"></i>
+												<h5  style="display: inline-block">设备信息</h5>
+
+												<div class="widget-toolbar">
+													<a href="#" data-action="collapse">
+														<i class="icon-chevron-up"></i>
+													</a>
+												</div>
+											</div>
+
+											<div class="widget-body">
+												<div class="widget-main" style="overflow: hidden;">
+													<!--圆环图表-->
+													<div class="col-lg-6 col-xs-9 center">
+														<div class="easy-pie-chart percentage" data-percent="40" data-color="#e26c60">
+															<!--<span class="percent">60</span>%-->
+														</div>
+													</div><!-- /span -->
+
+													<!--色块标识-->
+													<div class="col-lg-6 col-xs-3" style="padding: 50px 0;">
+
+														<div class="progress" data-percent="66%">
+															<div class="progress-bar"></div>
+															<span style="color:#33a9db;">设备个数(3)</span>
+														</div>
+
+														<div class="progress" data-percent="66%">
+															<div class="progress-bar" style="background:#06c8a6"></div>
+															<span style="color:#06c8a6;">正常运行个数(3)</span>
+														</div>
+
+														<div class="progress" data-percent="66%">
+															<div class="progress-bar" style="background:#e26c60;"></div>
+															<span style="color:#e26c60;">异常运行个数(3)</span>
+														</div>
+													</div><!-- /span -->
+													<!--圆环图表-->
+
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-xs-12 col-sm-6 widget-container-span">
+										<div class="widget-box">
+											<div class="widget-header">
+												<i class="icon-check"></i>
+												<h5 style="display: inline-block">服务管理</h5>
+
+												<div class="widget-toolbar">
+													<a href="#" data-action="collapse">
+														<i class="icon-chevron-up"></i>
+													</a>
+												</div>
+											</div>
+
+											<div class="widget-body">
+												<div class="widget-main row" style="margin-left: 0;">
+													<div class="col-lg-7 col-xs-8">
+														<canvas id="myChart" width="300" height="250"></canvas>
+													</div>
+													<div class="col-lg-5 col-xs-4">
+														<div>
+
+															<div class="progress" data-percent="66%">
+																<div class="progress-bar"></div>
+																<span style="color:#33a9db;">设备个数4)</span>
+															</div>
+
+															<div class="progress" data-percent="66%">
+																<div class="progress-bar" style="background:#f39c11"></div>
+																<span style="color:#f39c11;">服务个数(3)</span>
+															</div>
+
+															<div class="progress" data-percent="66%">
+																<div class="progress-bar" style="background:#06c7a8;"></div>
+																<span style="color:#06c7a8;">正常运行个数(2)</span>
+															</div>
+
+															<div class="progress" data-percent="66%">
+																<div class="progress-bar" style="background:#e26c60;"></div>
+																<span style="color:#e26c60;">异常运行个数(1)</span>
+															</div>
+														</div><!-- /span -->
+													</div>
+												</div>
+											</div>
+										</div>
+									</div><!-- /span -->
+								</div><!-- /row -->
+
+								<div class="row">
+									<div class="col-xs-12 col-sm-6 widget-container-span">
+										<div class="widget-box">
+											<div class="widget-header">
+												<i class="icon-user"></i>
+												<h5  style="display: inline-block">用户信息</h5>
+
+												<div class="widget-toolbar">
+
+													<a href="#" data-action="collapse">
+														<i class="icon-chevron-up"></i>
+													</a>
+												</div>
+											</div>
+
+											<div class="widget-body">
+												<div class="widget-main" style="overflow: hidden;">
+													<div class="container" style="text-align: center">
+														<img src="images/user.jpg" style="height: 100%;margin: 0 auto" alt=""/>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-xs-12 col-sm-6 widget-container-span">
+										<div class="widget-box">
+											<div class="widget-header">
+												<i class="icon-list-alt"></i>
+												<h5 style="display: inline-block">业务信息</h5>
+
+												<div class="widget-toolbar">
+													<a href="#" data-action="collapse">
+														<i class="icon-chevron-up"></i>
+													</a>
+												</div>
+											</div>
+
+											<div class="widget-body">
+												<div class="widget-main row" style="overflow: hidden;">
+													<div class="container" style="text-align: center">
+														<img src="images/yewu.jpg" style="height: 100%;margin: 0 auto" alt=""/>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div><!-- /span -->
+								</div><!-- /row -->
+
+								<!-- PAGE CONTENT ENDS -->
+
+		<!--main-container 结束-->
+
+
+
+		<!-- basic scripts -->
+
+		<!--[if !IE]> -->
+
+		<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>-->
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+<!--<![endif]&ndash;&gt;-->
+
+		<!--[if !IE]> -->
+
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='../assets/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
+		</script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+<script type="text/javascript">
+ window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
+</script>
+<![endif]-->
+
+		<script type="text/javascript">
+			if("ontouchend" in document) document.write("<script src='../assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+		</script>
+		<script src="../assets/js/bootstrap.min.js"></script>
+		<script src="../assets/js/typeahead-bs2.min.js"></script>
+
+		<!-- page specific plugin scripts -->
+		<!--圆环图表JS文件-->
+		<script src="assets/js/jquery.easy-pie-chart.min.js"></script>
+		<!--柱状图-->
+		<script src="js/Chart.js"></script>
+		<!-- ace scripts -->
+		<!--<script src="../assets/js/ace-elements.min.js"></script>-->
+		<!--<script src="../assets/js/ace.min.js"></script>-->
+
+		<script type="text/javascript">
+
+//			圆环图表
+			jQuery(function($) {
+				var oldie = /msie\s*(8|7|6)/.test(navigator.userAgent.toLowerCase());
+				$('.easy-pie-chart.percentage').each(function(){
+					$(this).easyPieChart({
+						barColor: $(this).data('color'),//该curcular栏的颜色
+						trackColor: '#06c7a8',//赛道的栏的颜色
+						scaleColor: false,//是否有外科度
+						lineCap: 'butt',//对接 ， 圆形 和 方形
+						lineWidth: 37,//	宽度像素的棒材生产线的
+						animate: oldie ? false : 1000,
+						size:216//圆的外直径
+					}).css('color', $(this).data('color'));
+				});
+
+			});
+		</script>
+		<script>
+			//柱状图
+			var mycolor=["#33a9db","#f39c11","#06c7a8","#e26c60"];
+			var myData=[5,4,3,2];
+			var data = {
+				labels : [""],
+				datasets : [
+					{
+						fillColor : mycolor[0],
+						strokeColor : null,
+						data : [myData[0]]
+					},{
+						fillColor : mycolor[1],
+						strokeColor : null,
+						data : [myData[1]]
+					},{
+						fillColor : mycolor[2],
+						strokeColor : null,
+						data : [myData[2]]
+					},{
+						fillColor : mycolor[3],
+						strokeColor : null,
+						data : [myData[3]]
+					}
+				]
+			};
+			var configs={
+				scaleOverride : true, // 是否用硬编码重写y轴网格线
+				scaleSteps : 4, //y轴刻度的个数
+				scaleStepWidth : 1, //y轴每个刻度的宽度
+				scaleStartValue : 1 , //y轴的起始值
+				barValueSpacing : 20,//最外面柱子与两边的距离
+				barDatasetSpacing : 10,//不同data柱子之间间距
+				scaleGridLineColor : "rgba(0,0,0,0)"    // 网格线的颜色
+			};
+			//Get context with jQuery - using jQuery's .get() method.
+			var ctx = $("#myChart").get(0).getContext("2d");
+			//This will get the first returned node in the jQuery collection.
+			var myNewChart = new Chart(ctx);
+			new Chart(ctx).Bar(data,configs);
+		</script>
+	</body>
+</html>
